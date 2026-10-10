@@ -78,11 +78,13 @@ struct ScreenMateShortcuts: AppShortcutsProvider {
     static var appShortcuts: [AppShortcut] {
         AppShortcut(
             intent: SendToScreenMateIntent(),
+            // Avoid "send … to …": Siri treats that as a message to a contact.
             phrases: [
-                "Send to \(.applicationName)",
-                "Send this to \(.applicationName)",
-                "Send this page to \(.applicationName)",
+                "Show this on \(.applicationName)",
+                "Cast this to \(.applicationName)",
+                "Open this on \(.applicationName)",
                 "Put this on \(.applicationName)",
+                "Play this on \(.applicationName)",
             ],
             shortTitle: "Send to ScreenMate",
             systemImageName: "rectangle.on.rectangle"

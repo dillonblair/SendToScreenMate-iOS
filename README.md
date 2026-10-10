@@ -34,7 +34,7 @@ Apps that don't expose their content to Shortcuts (YouTube, for example) work th
 
 ### Siri
 
-Say **"Send this to ScreenMate"** while a page is open. With Apple Intelligence, Siri may pass the on-screen page straight to the action's *Web Page* input, which carries the full address. Shortcuts that read the screen themselves only see the domain Safari displays, so for Safari pages use this phrase or the share sheet.
+Say **"Show this on ScreenMate"** (or "Cast this to Car Screen") while a page is open. Phrases starting with "Send" are avoided because Siri treats them as messages to a contact. With Apple Intelligence, Siri may pass the on-screen page straight to the action's *Web Page* input, which carries the full address. Shortcuts that read the screen themselves only see the domain Safari displays, so for Safari pages use this phrase or the share sheet.
 
 ## Wire protocol
 
