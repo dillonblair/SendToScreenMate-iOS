@@ -1,0 +1,10 @@
+// Shared build settings. Do not put personal values here.
+// Copy Local.example.xcconfig to Local.xcconfig (git-ignored) and set your own values.
+
+BUNDLE_PREFIX = org.example
+DEVELOPMENT_TEAM =
+
+#include? "Local.xcconfig"
+
+APP_BUNDLE_ID = $(BUNDLE_PREFIX).sendtoscreenmate
+APP_GROUP_ID = group.$(APP_BUNDLE_ID)

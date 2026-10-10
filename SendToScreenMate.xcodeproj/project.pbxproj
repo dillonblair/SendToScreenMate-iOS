@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8430356AB4362F2789AFC64 = {
+			isa = PBXBuildFile;
+			fileRef = 12752A17254DCE880790BF7E;
+			settings = {
+				ATTRIBUTES = (
+					RemoveHeadersOnCopy,
+				);
+			};
+		};
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		813436FDF7C16D1C554B0BAB = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0;
+			proxyType = 1;
+			remoteGlobalIDString = 96DB0B6388F0FE2802F9EE1C;
+			remoteInfo = ShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9AA6B27FA3E6A2FC3E1295A7 = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D8430356AB4362F2789AFC64,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12752A17254DCE880790BF7E = {
+			isa = PBXFileReference;
+			explicitFileType = "wrapper.app-extension";
+			includeInIndex = 0;
+			path = ShareExtension.appex;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1A8A4C8A3ABF3E0F702B16A0 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = 0;
+			path = Tests.xctest;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1C6DA976CB104E884DD488F2 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.entitlements;
+			path = Share.entitlements;
+			sourceTree = "<group>";
+		};
+		2C1017EDCB7909831894986A = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = "App-Info.plist";
+			sourceTree = "<group>";
+		};
+		58BC6ADC9127A4E39A34B381 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xcconfig;
+			path = Base.xcconfig;
+			sourceTree = "<group>";
+		};
+		8E05484211462549CDF329F9 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = SendToScreenMate.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C88BAAA3D6BAB72432659F41 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = "Share-Info.plist";
+			sourceTree = "<group>";
+		};
+		D0EFD2ED6DA54B154E062473 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.entitlements;
+			path = App.entitlements;
+			sourceTree = "<group>";
+		};
+		F115E5EF7D23280F6A3BAFDA = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xcconfig;
+			path = Local.example.xcconfig;
+			sourceTree = "<group>";
+		};
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		51BF038A15605B7893ABCCD3 = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
+			sourceTree = "<group>";
+		};
+		8B7FA9C2BACDD1D63C8CD3CC = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		A13934176448C556B53D1823 = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D2AEBFEC68CDF25DDF576E26 = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E879B1D465B63EE2F809109 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF3B437BA89F257862A9E14 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA46D1E2868A1DD6A7BCDC32 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5151B46607EBC8890D8DFCC2 = {
+			isa = PBXGroup;
+			children = (
+				8E05484211462549CDF329F9,
+				12752A17254DCE880790BF7E,
+				1A8A4C8A3ABF3E0F702B16A0,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5619E268CFFE28118C19FC6A = {
+			isa = PBXGroup;
+			children = (
+				58BC6ADC9127A4E39A34B381,
+				F115E5EF7D23280F6A3BAFDA,
+				2C1017EDCB7909831894986A,
+				C88BAAA3D6BAB72432659F41,
+				D0EFD2ED6DA54B154E062473,
+				1C6DA976CB104E884DD488F2,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		ADCF10F76EBF2A74473E9DC4 = {
+			isa = PBXGroup;
+			children = (
+				51BF038A15605B7893ABCCD3,
+				A13934176448C556B53D1823,
+				8B7FA9C2BACDD1D63C8CD3CC,
+				D2AEBFEC68CDF25DDF576E26,
+				5619E268CFFE28118C19FC6A,
+				5151B46607EBC8890D8DFCC2,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0852CB7F387BCEEC03014A96 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2A9608481F53A22AA690D2D;
+			buildPhases = (
+				CD15DCBFDD320E0661EE2794,
+				BA46D1E2868A1DD6A7BCDC32,
+				C2744431430A1001C47348AB,
+				9AA6B27FA3E6A2FC3E1295A7,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DEF31C5689B2ED4D4D60C9B,
+			);
+			fileSystemSynchronizedGroups = (
+				51BF038A15605B7893ABCCD3,
+				A13934176448C556B53D1823,
+			);
+			name = SendToScreenMate;
+			packageProductDependencies = (
+			);
+			productName = SendToScreenMate;
+			productReference = 8E05484211462549CDF329F9;
+			productType = "com.apple.product-type.application";
+		};
+		96DB0B6388F0FE2802F9EE1C = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA0C0C86E3580B7041DE9039;
+			buildPhases = (
+				AE78C1633215778504F6EF5D,
+				4E879B1D465B63EE2F809109,
+				ED90CC0C229550D6A06A774A,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8B7FA9C2BACDD1D63C8CD3CC,
+				A13934176448C556B53D1823,
+			);
+			name = ShareExtension;
+			packageProductDependencies = (
+			);
+			productName = ShareExtension;
+			productReference = 12752A17254DCE880790BF7E;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D36B0321388355F31175A5A1 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4DB0C35B0D57911E8C7A011;
+			buildPhases = (
+				756CA709D009C5D74D2CA86A,
+				7EF3B437BA89F257862A9E14,
+				D90264A5408442166B4247BA,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D2AEBFEC68CDF25DDF576E26,
+				A13934176448C556B53D1823,
+			);
+			name = Tests;
+			packageProductDependencies = (
+			);
+			productName = Tests;
+			productReference = 1A8A4C8A3ABF3E0F702B16A0;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F54143AB4E86B28C3AFEE0 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					0852CB7F387BCEEC03014A96 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					96DB0B6388F0FE2802F9EE1C = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					D36B0321388355F31175A5A1 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 12D04D787E90C9B967248BFD;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADCF10F76EBF2A74473E9DC4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5151B46607EBC8890D8DFCC2;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0852CB7F387BCEEC03014A96,
+				96DB0B6388F0FE2802F9EE1C,
+				D36B0321388355F31175A5A1,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2744431430A1001C47348AB = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90264A5408442166B4247BA = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED90CC0C229550D6A06A774A = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		756CA709D009C5D74D2CA86A = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE78C1633215778504F6EF5D = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD15DCBFDD320E0661EE2794 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DEF31C5689B2ED4D4D60C9B = {
+			isa = PBXTargetDependency;
+			target = 96DB0B6388F0FE2802F9EE1C;
+			targetProxy = 813436FDF7C16D1C554B0BAB;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1CDC2D050A18FAF4121FFEBA = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = ShareExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID).share";
+				INFOPLIST_FILE = "Config/Share-Info.plist";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SendTo ScreenMate";
+				CODE_SIGN_ENTITLEMENTS = Config/Share.entitlements;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				SKIP_INSTALL = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		7E788526F7A026139ACF5E62 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = SendToScreenMate;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				INFOPLIST_FILE = "Config/App-Info.plist";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SendTo ScreenMate";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan the pairing QR code shown on your ScreenMate Receiver.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				CODE_SIGN_ENTITLEMENTS = Config/App.entitlements;
+				ENABLE_PREVIEWS = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		877A6BA951A2EA0025A2ABE8 = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58BC6ADC9127A4E39A34B381;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		959134B361DD7E21ADEA3164 = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58BC6ADC9127A4E39A34B381;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7C5AA363297B0FB6AD0DE1B = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = ShareExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID).share";
+				INFOPLIST_FILE = "Config/Share-Info.plist";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SendTo ScreenMate";
+				CODE_SIGN_ENTITLEMENTS = Config/Share.entitlements;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				SKIP_INSTALL = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9FB00CF4EF277833E1D1DBA = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID).tests";
+				GENERATE_INFOPLIST_FILE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1F0015E4E0F6FD1E9C0327A = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = SendToScreenMate;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				INFOPLIST_FILE = "Config/App-Info.plist";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SendTo ScreenMate";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan the pairing QR code shown on your ScreenMate Receiver.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				CODE_SIGN_ENTITLEMENTS = Config/App.entitlements;
+				ENABLE_PREVIEWS = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB290379199DD1C3CC0ECA01 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID).tests";
+				GENERATE_INFOPLIST_FILE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12D04D787E90C9B967248BFD = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877A6BA951A2EA0025A2ABE8,
+				959134B361DD7E21ADEA3164,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2A9608481F53A22AA690D2D = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E788526F7A026139ACF5E62,
+				C1F0015E4E0F6FD1E9C0327A,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4DB0C35B0D57911E8C7A011 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB290379199DD1C3CC0ECA01,
+				B9FB00CF4EF277833E1D1DBA,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA0C0C86E3580B7041DE9039 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CDC2D050A18FAF4121FFEBA,
+				B7C5AA363297B0FB6AD0DE1B,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0;
+}

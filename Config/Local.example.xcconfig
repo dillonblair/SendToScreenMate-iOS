@@ -1,0 +1,7 @@
+// Copy this file to Config/Local.xcconfig (git-ignored) and fill in your values.
+
+// A reverse-DNS prefix you control, e.g. com.yourname. Must be unique on your Apple account.
+BUNDLE_PREFIX = com.yourname
+
+// Your Apple Developer Team ID (Xcode → Settings → Accounts → Team).
+DEVELOPMENT_TEAM = ABCDE12345
