@@ -14,6 +14,11 @@ struct SendToScreenMateIntent: AppIntent {
     )
     static var openAppWhenRun = false
 
+    /// Filled by Siri / Apple Intelligence with the page on screen ("Send this to ScreenMate"),
+    /// or by a shortcut. Takes priority over Content.
+    @Parameter(title: "Web Page")
+    var page: URL?
+
     @Parameter(title: "Content", inputConnectionBehavior: .connectToPreviousIntentResult)
     var content: String?
 
@@ -25,6 +30,7 @@ struct SendToScreenMateIntent: AppIntent {
 
     static var parameterSummary: some ParameterSummary {
         Summary("Send \(\.$content) to ScreenMate") {
+            \.$page
             \.$screenshot
             \.$linkTitle
         }
@@ -33,14 +39,20 @@ struct SendToScreenMateIntent: AppIntent {
     func perform() async throws -> some IntentResult & ReturnsValue<String> & ProvidesDialog {
         let pairing = try PairingStore.require()
         let text = content ?? ""
-        // With a screenshot as backup, Content only counts if it holds a link or place.
-        var payload = LinkParser.payload(from: text, title: linkTitle, requireTarget: screenshot != nil)
-        if payload == nil, let screenshot {
-            let screenText = try ScreenReader.text(in: screenshot.data)
-            payload = LinkParser.payload(from: screenText, title: linkTitle, requireTarget: true)
+        var candidate: LinkPayload?
+        if let page, ["http", "https"].contains(page.scheme?.lowercased() ?? "") {
+            candidate = LinkParser.payload(from: page.absoluteString, title: linkTitle)
         }
-        guard let payload else {
-            throw ScreenMateError(text.isEmpty && screenshot == nil
+        // With a screenshot as backup, Content only counts if it holds a link or place.
+        if candidate == nil {
+            candidate = LinkParser.payload(from: text, title: linkTitle, requireTarget: screenshot != nil)
+        }
+        if candidate == nil, let screenshot {
+            let screenText = try ScreenReader.text(in: screenshot.data)
+            candidate = LinkParser.payload(from: screenText, title: linkTitle, requireTarget: true)
+        }
+        guard let payload = candidate else {
+            throw ScreenMateError(text.isEmpty && screenshot == nil && page == nil
                 ? "Nothing to send."
                 : "No link or address found. Use Share → SendTo ScreenMate in this app instead.")
         }
@@ -66,7 +78,12 @@ struct ScreenMateShortcuts: AppShortcutsProvider {
     static var appShortcuts: [AppShortcut] {
         AppShortcut(
             intent: SendToScreenMateIntent(),
-            phrases: ["Send to \(.applicationName)"],
+            phrases: [
+                "Send to \(.applicationName)",
+                "Send this to \(.applicationName)",
+                "Send this page to \(.applicationName)",
+                "Put this on \(.applicationName)",
+            ],
             shortTitle: "Send to ScreenMate",
             systemImageName: "rectangle.on.rectangle"
         )

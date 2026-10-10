@@ -4,5 +4,16 @@
 <dict>
 	<key>AppGroupID</key>
 	<string>$(APP_GROUP_ID)</string>
+	<key>INAlternativeAppNames</key>
+	<array>
+		<dict>
+			<key>INAlternativeAppName</key>
+			<string>ScreenMate</string>
+		</dict>
+		<dict>
+			<key>INAlternativeAppName</key>
+			<string>Screen Mate</string>
+		</dict>
+	</array>
 </dict>
 </plist>

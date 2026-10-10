@@ -32,6 +32,10 @@ Optionally add **Take Screenshot** and pass it as the action's *Screenshot*: whe
 
 Apps that don't expose their content to Shortcuts (YouTube, for example) work through the share sheet instead.
 
+### Siri
+
+Say **"Send this to ScreenMate"** while a page is open. With Apple Intelligence, Siri can pass the on-screen page straight to the action's *Web Page* input, which carries the full address. Shortcuts that read the screen themselves only see the domain Safari displays, so for Safari pages use this phrase or the share sheet.
+
 ## Wire protocol
 
 | Item | Format |
